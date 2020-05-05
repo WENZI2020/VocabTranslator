@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/other/other",
+    "pages/me/me",
+    "pages/music/music",
+    "pages/movie/movie",
+    "pages/photo/photo"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#888",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "旧词汇+",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "light",
+    "onReachBottomDistance": 50,
+    "pageOrientation": "portrait"
+  },
+  "tabBar": {
+    "color": "#bbb",
+    "selectedColor": "#f00",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "旧词汇",
+        "iconPath": "image/one_index.png",
+        "selectedIconPath": "image/two_index.png"
+      },
+      {
+        "pagePath": "pages/other/other",
+        "text": "探索",
+        "iconPath": "image/one_other.png",
+        "selectedIconPath": "image/two_other.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "image/one_me.png",
+        "selectedIconPath": "image/two_me.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true
+}

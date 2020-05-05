@@ -1,0 +1,40 @@
+/* miniprogram/pages/other/other.wxss */
+
+scroll-view {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.nav {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  color: #000;
+  border: 1px solid #bbb;
+  margin: 1px;
+  padding: 2px 14px 0px;
+}
+
+.nav>view {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  text-align: center;
+  background: rgb(146, 185, 1);
+  box-shadow: 0pt 0pt 5pt 0pt #000;
+  border: 1px solid #000;
+  border-radius: 30%;
+  margin: 0 auto;
+}
+
+.nav>button {
+  height: 16px;
+  width: 40px;
+  font-size: 8px;
+  font-weight: bolder;
+}
