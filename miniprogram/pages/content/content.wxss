@@ -31,10 +31,12 @@
   display: flex;
   flex-flow: row nowrap;
   height: 26pt;
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0.6;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
   border: 1rpx solid #fff;
   border-radius: 20pt;
+  padding-left: 1pt;
+  padding-right: 1pt;
   overflow: hidden;
 }
 
@@ -42,8 +44,8 @@
   height: 16pt;
   width: 16pt;
   padding: 5pt;
-  padding-left: 12pt;
-  padding-right: 12pt;
+  padding-left: 13pt;
+  padding-right: 13pt;
 }
 
 .content>view icon {
