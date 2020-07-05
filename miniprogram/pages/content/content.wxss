@@ -44,8 +44,8 @@
   height: 16pt;
   width: 16pt;
   padding: 5pt;
-  padding-left: 13pt;
-  padding-right: 13pt;
+  padding-left: 12pt;
+  padding-right: 12pt;
 }
 
 .content>view icon {
@@ -89,12 +89,22 @@
   text-align: right;
 }
 
-movable-area {
+movable-area:first-of-type {
   position: fixed;
+  z-index: 2;
   top: 30vh;
   left: 0px;
   width: 100%;
   height: 138vh;
+}
+
+movable-area:last-of-type {
+  position: fixed;
+  z-index: 3;
+  top: 75vh;
+  left: 0px;
+  width: 100%;
+  height: 48vh;
 }
 
 movable-view {
@@ -106,9 +116,16 @@ movable-view {
   right: 0px;
   background: #333;
   color: #fff;
-  width: 95%;
-  height: 71.5vh;
+  width: 95.5%;
   overflow: hidden;
+}
+
+movable-area:first-of-type movable-view {
+  height: 81vh;
+}
+
+movable-area:last-of-type movable-view {
+  height: 29vh;
 }
 
 movable-view>view:first-child {

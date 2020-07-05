@@ -35,5 +35,8 @@
 			</swiper>
 		</movable-view>
 	</movable-area>
+	<movable-area>
+		<movable-view direction="vertical" y="{{move}}" inertia out-of-bounds></movable-view>
+	</movable-area>
 	<image src="{{imageBg}}" mode="aspectFill" lazy-load webp></image>
 </view>
