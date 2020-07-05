@@ -1,0 +1,39 @@
+<!--miniprogram/pages/content/content.wxml-->
+<view class="content">
+	<view id="index">
+		<view>
+			<image catchtap="backHome" src="../../image/content_quit.png"></image>
+			<image src="../../image/content_menu.png"></image>
+		</view>
+	</view>
+	<scroll-view scroll-with-animation scroll-x>{{word}}</scroll-view>
+	<view>
+		<icon type="download" size="22" color="#888" bindtap="am2"></icon>{{am1}}
+		<icon type="download" size="22" color="#888" bindtap="en2"></icon>{{en1}}
+	</view>
+	<text>{{parts}}</text>
+	<text><text>{{ex2}}</text>{{ex1}}</text>
+	<movable-area>
+		<movable-view direction="vertical" y="{{move}}" inertia out-of-bounds>
+			<view>
+				<view>
+					<image src="../../image/content_follow1.png"></image>
+					<text>图画</text>
+					<image src="../../image/content_share.png"></image>
+				</view>
+			</view>
+			<swiper indicator-dots indicator-color="#fff">
+				<swiper-item>
+					<image mode="aspectFill" show-menu-by-longpress webp></image>
+				</swiper-item>
+				<swiper-item>
+					<audio loop controls></audio>
+				</swiper-item>
+				<swiper-item>
+					<video loop vslide-gesture show-screen-lock-button show-casting-button show-mute-btn enable-play-gesture enable-danmu danmu-btn controls danmu-list="Word"></video>
+				</swiper-item>
+			</swiper>
+		</movable-view>
+	</movable-area>
+	<image src="{{imageBg}}" mode="aspectFill" lazy-load webp></image>
+</view>

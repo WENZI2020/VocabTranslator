@@ -1,0 +1,169 @@
+/* miniprogram/pages/content/content.wxss */
+.content {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content>image:last-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  filter: blur(73px);
+  z-index: -10;
+}
+
+#index {
+  position: relative;
+  width: 100%;
+  height: 10.3vh;
+  font-size: 15pt;
+  color: #000;
+}
+
+#index>view:first-child {
+  position: absolute;
+  left: 5%;
+  top: 41%;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 26pt;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.6;
+  border: 1rpx solid #fff;
+  border-radius: 20pt;
+  overflow: hidden;
+}
+
+#index>view image {
+  height: 16pt;
+  width: 16pt;
+  padding: 5pt;
+  padding-left: 12pt;
+  padding-right: 12pt;
+}
+
+.content>view icon {
+  vertical-align: sub;
+}
+
+.content>scroll-view:nth-child(2) {
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 56pt;
+}
+
+.content>view:nth-child(3) {
+  width: 100%;
+  font-size: 13pt;
+  word-break: keep-all;
+  text-align: center;
+}
+
+.content>text:nth-child(4) {
+  width: 100%;
+  font-size: 11pt;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.content>text:nth-child(5) {
+  width: 99%;
+  margin: 0 auto;
+  font-size: 13pt;
+  white-space: nowrap;
+  display: block;
+}
+
+.content>text:nth-child(5) text {
+  float: right;
+  text-align: right;
+}
+
+movable-area {
+  position: fixed;
+  top: 30vh;
+  left: 0px;
+  width: 100%;
+  height: 138vh;
+}
+
+movable-view {
+  box-shadow: 0pt 0pt 12pt 0pt #000;
+  border-top-left-radius: 4em;
+  border-top-right-radius: 4em;
+  border: 5pt solid #fff;
+  margin: 0 auto;
+  right: 0px;
+  background: #333;
+  color: #fff;
+  width: 95%;
+  height: 71.5vh;
+  overflow: hidden;
+}
+
+movable-view>view:first-child {
+  width: 100%;
+  text-align: center;
+  font-size: 15pt;
+  margin: 0pt auto;
+  padding-top: 2.5vh;
+  padding-bottom: 2vh;
+}
+
+movable-view>view:first-child text {
+  display: inline-block;
+  border-bottom: 2pt solid #fff;
+}
+
+movable-view>view:first-child image {
+  width: 25px;
+  height: 25px;
+  vertical-align: sub;
+  margin-left: 24pt;
+  margin-right: 24pt;
+}
+
+movable-view>view:first-child image:first-child {
+  float: left;
+}
+
+movable-view>view:first-child image:last-child {
+  float: right;
+}
+
+movable-view>swiper {
+  width: 100%;
+  height: 35vh;
+}
+
+swiper-item image {
+  background: #f3e1be;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item audio {
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item video {
+  background: #000;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+}

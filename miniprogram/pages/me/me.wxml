@@ -1,15 +1,62 @@
 <!--miniprogram/pages/me/me.wxml-->
-<view class="container">
-  <scroll-view scroll-y enable-flex>
-    <view class="userinfo">
-      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
-    </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view>
-  </scroll-view>
-</view>
+<scroll-view scroll-y enable-flex>
+	<navigator class="list user" hover-stop-propagation>
+		<button plain hover-stop-propagation loading lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{userInfo.avatarUrl==null}}"></button>
+		<open-data wx:else></open-data>
+		<view>
+			<text wx:if="{{userInfo.gender==1}}">男性</text>
+			<text wx:elif="{{userInfo.gender==2}}">女性</text>
+			<text wx:else>未知</text>
+			<text>{{userInfo.city}}</text>
+		</view>
+		<open-data type="userAvatarUrl" lang="zh_CN" default-avatar="../../image/app_icon.jpg"></open-data>
+		<view>
+			<text>{{userInfo.nickName?userInfo.nickName:"欢迎归来"}}\n</text>
+			<progress percent="1" stroke-width="12" border-radius="20" duration="3000" activeColor="#000" active></progress>
+		</view>
+		<view>
+			<button catchtap="notice" hover-stop-propagation>消 息</button>
+			<button catchtap="oclock" hover-stop-propagation>打 卡</button>
+		</view>
+	</navigator>
+	<navigator url="../me/record" class="list data" hover-stop-propagation>
+		<view>0<text>图画</text></view>
+		<view>0<text>音乐</text></view>
+		<view>0<text>电影</text></view>
+	</navigator>
+	<navigator class="list" hover-stop-propagation>
+		<image src="../../image/me_theme.png"></image>
+		<text>主题</text>
+		<image src="../../image/me_toright.png"></image>
+	</navigator>
+	<navigator class="list" hover-stop-propagation>
+		<image src="../../image/me_about.png"></image>
+		<text>关于</text>
+		<image src="../../image/me_toright.png"></image>
+	</navigator>
+	<navigator class="list" hover-stop-propagation>
+		<image src="../../image/me_option.png"></image>
+		<text>设置</text>
+		<image src="../../image/me_toright.png"></image>
+	</navigator>
+	<navigator class="list" hover-stop-propagation>
+		<button show-message-card open-type="contact" plain>客 服 会 话<text>点击按钮访问窗口</text></button>
+		<image src="../../image/me_space.png"></image>
+		<image src="../../image/me_toright.png"></image>
+	</navigator>
+	<navigator class="list" hover-stop-propagation>
+		<button open-type="openSetting" plain>授 权 设 置<text>点击按钮访问窗口</text></button>
+		<image src="../../image/me_space.png"></image>
+		<image src="../../image/me_toright.png"></image>
+	</navigator>
+	<navigator class="list" hover-stop-propagation>
+		<button open-type="feedback" plain>意 见 反 馈<text>点击按钮访问窗口</text></button>
+		<image src="../../image/me_space.png"></image>
+		<image src="../../image/me_toright.png"></image>
+	</navigator>
+	<navigator class="list" hover-stop-propagation>
+		<button open-type="share" plain>分 享 信 息<text>点击按钮访问窗口</text></button>
+		<image src="../../image/me_space.png"></image>
+		<image src="../../image/me_toright.png"></image>
+	</navigator>
+</scroll-view>

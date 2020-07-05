@@ -1,4 +1,4 @@
-// miniprogram/pages/other/other.js
+// miniprogram/pages/cmusic/cmusic.js
 Page({
 
   /**
@@ -61,10 +61,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return {
-      title: "旧词汇又双叒叕来了，一直给您不一样的体验！",
-      desc: "旧词汇+",
-      imageUrl: "../../image/app_icon.jpg"
-    }
+
   }
 })

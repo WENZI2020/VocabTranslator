@@ -1,25 +1,141 @@
 /* miniprogram/pages/me/me.wxss */
+
 scroll-view {
-  align-self: center;
   width: 100%;
-}
-.userinfo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column nowrap;
+  box-shadow: 0pt 26pt 18pt -18pt #bbb inset;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.list {
+  flex: 1;
+  align-self: center;
+  position: relative;
+  width: 98.5%;
+  color: #000;
+  background: #fff;
+  font-size: 24px;
+  text-align: left;
+  border-left: 1pt solid #bbb;
+  border-right: 1pt solid #bbb;
+  border-bottom: 1pt solid #bbb;
+  margin: 0pt auto;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+}
+
+.list:first-of-type {
+  box-shadow: 0pt 26pt 18pt -18pt #bbb inset;
+}
+
+.data {
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 1pt solid #bbb;
+}
+
+.data>view {
+  flex: 1;
+  color: #000;
+  text-align: center;
+  align-self: center;
+}
+
+.data>view:nth-of-type(2) {
+  border-left: 1pt solid #bbb;
+  border-right: 1pt solid #bbb;
+}
+
+.data>view text {
+  display: block;
+  font-size: 10pt;
+}
+
+.list>button:first-child {
+  position: absolute;
+  font-size: 18px;
+  left: 0pt;
+  top: 0pt;
+  border-top-width: 0pt;
+  border-bottom-width: 0pt;
+  height: 100%;
+  width: 100%;
+}
+
+.list>button:first-child text {
+  font-size: 6pt;
+  color: #888;
+  display: block;
+}
+
+.list>image {
+  width: 32px;
+  height: 32px;
+  margin-bottom: -7px;
+  margin-left: 12pt;
+  margin-right: 12pt;
+}
+
+.list>image:last-child {
+  float: right;
+}
+
+.user {
+  margin-top: 1pt;
+  margin-bottom: 2pt;
+  border-top: 1pt solid #bbb;
+}
+
+.user>open-data:last-of-type {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  margin-left: 1pt;
+  margin-right: 1pt;
+  vertical-align: top;
+  border: 1pt solid #aaa;
   border-radius: 50%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.user>view {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
 }
 
-.usermotto {
-  margin-top: 200px;
+.user>view:nth-of-type(1) {
+  padding-top: 4px;
+  height: 60px;
+  width: 48px;
+}
+
+.user>view:nth-of-type(2) {
+  padding-top: 4px;
+  height: 60px;
+  width: 120px;
+}
+
+.user>view:last-child {
+  float: right;
+}
+
+.user>view text:last-child {
+  margin-top: 4pt;
+  display: block;
+  font-size: 13px;
+  text-align: right;
+}
+
+.user>view progress {
+  margin-top: 7pt;
+  width: 90px;
+}
+
+.user>view button {
+  height: 32px;
+  margin-right: 3pt;
+  font-size: 13px;
+  border-color: #aaa;
 }

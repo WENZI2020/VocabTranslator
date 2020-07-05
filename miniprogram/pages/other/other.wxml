@@ -1,57 +1,45 @@
 <!--miniprogram/pages/other/other.wxml-->
-<view class="container">
-  <scroll-view scroll-y enable-flex>
-    <navigator class="nav" hover-stop-propagation>
-      <view>课本教材</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>作业测试</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>直播课堂</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>语法语义</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>口语问答</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>学霸笔记</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>课本教材</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>课本教材</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>课本教材</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>课本教材</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>课本教材</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>课本教材</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-    <navigator class="nav" hover-stop-propagation>
-      <view>探索更多</view>
-      <button size="mini" plain hover-stop-propagation>启用</button>
-    </navigator>
-  </scroll-view>
-</view>
+<scroll-view scroll-y enable-flex>
+	<view class="item1">
+		<navigator class="item2" hover-stop-propagation>
+			<view>课本教材</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+		<navigator class="item2" hover-stop-propagation>
+			<view>作业测验</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+		<navigator class="item2" hover-stop-propagation>
+			<view>直播课堂</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+	</view>
+	<view class="item1">
+		<navigator class="item2" hover-stop-propagation>
+			<view>词法句法</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+		<navigator class="item2" hover-stop-propagation>
+			<view>音标字母</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+		<navigator class="item2" hover-stop-propagation>
+			<view>口语问答</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+	</view>
+	<view class="item1">
+		<navigator class="item2" hover-stop-propagation>
+			<view>学霸笔记</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+		<navigator class="item2" hover-stop-propagation>
+			<view>增添移除</view>
+			<button size="mini" plain hover-stop-propagation>编辑</button>
+		</navigator>
+		<navigator class="item2" hover-stop-propagation>
+			<view>学霸笔记</view>
+			<button size="mini" plain hover-stop-propagation>启用</button>
+		</navigator>
+	</view>
+</scroll-view>

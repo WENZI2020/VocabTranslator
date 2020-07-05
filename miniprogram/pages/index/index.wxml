@@ -1,50 +1,44 @@
 <!--index.wxml-->
-<view class="container">
-  <view id="index">
-    <text>搜索</text>
-    <icon type="search" size="14" color="black"></icon>
-    <input type="text" placeholder="关键词" confirm-type="go"></input>
-    <icon type="cancel" size="19" color="black"></icon>
-  </view>
-  <scroll-view scroll-y refresher-enabled refresher-triggered>
-    <view class="header">
-      <view>天气</view>
-      <view>地图</view>
-      <view>日历</view>
-    </view>
-    <view class="bodyer">
-      <text>看 图 画</text>
-      <view class="body">
-        <text>听 音 乐</text>
-        <swiper indicator-dots autoplay vertical easing-function="linear">
-          <swiper-item>
-            <image src="../music/music.jpg" mode="aspectFill" lazy-load></image>
-          </swiper-item>
-        </swiper>
-        <swiper indicator-dots autoplay interval="3000" easing-function="easeInOutCubic">
-          <swiper-item>
-            <image src="../photo/books1.jpg" lazy-load></image>
-          </swiper-item>
-          <swiper-item>
-            <image src="../photo/books3.jpg" lazy-load></image>
-          </swiper-item>
-          <swiper-item>
-            <image src="../photo/books2.jpg" lazy-load></image>
-          </swiper-item>
-        </swiper>
-        <swiper indicator-dots autoplay interval="3000" easing-function="easeInOutCubic">
-          <swiper-item>
-            <image src="../movie/movie1.jpg" lazy-load></image>
-          </swiper-item>
-          <swiper-item>
-            <image src="../movie/movie2.jpg" lazy-load></image>
-          </swiper-item>
-          <swiper-item>
-            <image src="../movie/movie3.jpg" lazy-load></image>
-          </swiper-item>
-        </swiper>
-      </view>
-      <text>玩 电 影</text>
-    </view>
-  </scroll-view>
+<view id="index">
+	<view>
+		<text>搜索</text>
+		<icon type="search" size="18" color="black" catchtap="searched"></icon>
+		<input type="text" placeholder="关键词{{tips}}" confirm-type="search" bindinput="searching" bindblur="searchout" bindconfirm="searched" value="{{words}}"></input>
+		<icon type="cancel" size="22" color="black" catchtap="cancel"></icon>
+	</view>
+	<view>
+		<view>{{searcher}}</view>
+		<view catchtap="changeWords" wx:for="{{searches}}" wx:key="unique">{{item.key}}
+			<view wx:for="{{item.value}}" wx:key="unique">{{item}}；</view>
+		</view>
+	</view>
+</view>
+<view class="header">
+	<view></view>
+	<view></view>
+	<view></view>
+</view>
+<view class="bodyer">
+	<text>看见<text></text>听见<text></text>碰见</text>
+	<view class="body">
+		<swiper indicator-dots autoplay easing-function="linear">
+			<swiper-item>
+				<image src="../cmusic/cmusic.jpg" mode="aspectFit" lazy-load webp></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="../cmusic/cmusic.jpg" mode="aspectFit" lazy-load webp></image>
+			</swiper-item>
+		</swiper>
+		<swiper indicator-dots autoplay vertical interval="3000" easing-function="easeInOutCubic">
+			<swiper-item wx:for="{{profiles}}" wx:key="unique">
+				<image src="{{item.subject.images.large}}" lazy-load webp></image>
+			</swiper-item>
+		</swiper>
+		<swiper indicator-dots autoplay vertical interval="3000" easing-function="easeInOutCubic">
+			<swiper-item wx:for="{{summary}}" wx:key="unique">
+				<image src="{{item.images.large}}" lazy-load webp></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<text>图画<text></text>音乐<text></text>电影</text>
 </view>

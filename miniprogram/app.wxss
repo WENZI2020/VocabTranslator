@@ -1,12 +1,9 @@
 /**app.wxss**/
 
-.container {
+page {
+  background-color: #eee;
   width: 100%;
-  height: 100%;
-  padding: 0rpx;
-  margin: 0rpx auto;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-between;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
 }

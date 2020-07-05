@@ -1,38 +1,49 @@
 /* miniprogram/pages/other/other.wxss */
 
 scroll-view {
-  align-self: center;
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  box-shadow: 0pt 26pt 18pt -18pt #bbb inset;
 }
 
-.nav {
+.item1 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.item2 {
   flex: 1;
   align-self: center;
-  text-align: center;
   color: #000;
-  border: 1px solid #bbb;
-  margin: 1px;
-  padding: 2px 14px 0px;
+  background: #fff;
+  text-align: center;
+  border: 1pt solid #bbb;
+  margin: 2pt;
+  padding-top: 17pt;
 }
 
-.nav>view {
+.item1:first-of-type>.item2 {
+  box-shadow: 0pt 26pt 18pt -18pt #bbb inset;
+}
+
+.item2>view {
   width: 70px;
   height: 70px;
-  font-size: 25px;
+  font-size: 24px;
   text-align: center;
-  background: rgb(146, 185, 1);
+  background: #f3e1be;
   box-shadow: 0pt 0pt 5pt 0pt #000;
-  border: 1px solid #000;
+  border: 1pt solid #000;
   border-radius: 30%;
-  margin: 0 auto;
+  margin: 0pt auto;
+  overflow: hidden;
+  padding: 0pt;
 }
 
-.nav>button {
+.item2>button {
   height: 16px;
   width: 40px;
   font-size: 8px;
