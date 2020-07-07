@@ -7,7 +7,7 @@
     "pages/cmusic/cmusic",
     "pages/cmovie/cmovie",
     "pages/content/content",
-    "pages/me/record"
+    "pages/me/note"
   ],
   "window": {
     "navigationBarBackgroundColor": "#333",
