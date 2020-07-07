@@ -19,7 +19,7 @@
 			<button catchtap="oclock" hover-stop-propagation>打 卡</button>
 		</view>
 	</navigator>
-	<navigator url="../me/record" class="list data" hover-stop-propagation>
+	<navigator url="../me/note" class="list data" hover-stop-propagation>
 		<view>0<text>图画</text></view>
 		<view>0<text>音乐</text></view>
 		<view>0<text>电影</text></view>
