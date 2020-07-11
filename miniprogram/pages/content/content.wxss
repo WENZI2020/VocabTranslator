@@ -111,7 +111,7 @@ movable-view {
   box-shadow: 0pt 0pt 12pt 0pt #000;
   border-top-left-radius: 4em;
   border-top-right-radius: 4em;
-  border: 5pt solid #fff;
+  border: 4pt solid #fff;
   margin: 0 auto;
   right: 0px;
   background: #333;
