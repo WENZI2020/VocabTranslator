@@ -91,22 +91,32 @@
 |      |   └...
 ├─cloudfunctions `云函数`
 |       ├─openapi `接口`
+|       |    ├─node_modules
+|       |    | └...
 |       |    ├─config.json
 |       |    ├─index.js
+|       |    ├─package-lock.json
 |       |    └package.json
 |       ├─login `登录`
 |       |   ├─node_modules
-|       |   |   └...
+|       |   | └...
 |       |   ├─config.json
 |       |   ├─index.js
+|       |   ├─package-lock.json
 |       |   └package.json
 |       ├─echo `输出`
+|       |  ├─node_modules
+|       |  | └...
 |       |  ├─config.json
 |       |  ├─index.js
+|       |  ├─package-lock.json
 |       |  └package.json
 |       ├─callback `回调`
+|       |    ├─node_modules
+|       |    | └...
 |       |    ├─config.json
 |       |    ├─index.js
+|       |    ├─package-lock.json
 |       |    └package.json
 
 #### 运行结果
