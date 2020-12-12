@@ -1,6 +1,6 @@
 # VocabTranslator
 
-[![Fork me on Gitee](https://gitee.com/WENZI2020/VocabTranslator/widgets/widget_3.svg)](https://gitee.com/WENZI2020/VocabTranslator)<br/>
+[![Fork Me On Gitee!](https://gitee.com/WENZI2020/VocabTranslator/widgets/widget_3.svg)](https://gitee.com/WENZI2020/VocabTranslator)<br/>
 词汇翻译小程序 ![](https://img.shields.io/badge/曾昭文-个人项目-red.svg)<br/>针对学习某一词，大量引用相关的图画解说，音乐歌词和电影字幕。其作用是，让使用者利用虚构的场景（图书音乐电影）及其内容（文本）读懂这单词的含义，更容易地掌握和运用英语词汇。
 
 #### 集成环境
